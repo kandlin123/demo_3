@@ -1,7 +1,6 @@
 package com.example.demo_3.domain;
 
 import jakarta.persistence.*;
-import jdk.jfr.Enabled;
 import lombok.*;
 
 @Entity
@@ -15,7 +14,7 @@ public class Board extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private int bno;
+    private Long bno;
 
     @Column(length = 500, nullable = false)
     private String title;
